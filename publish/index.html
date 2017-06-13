@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app="myapp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div ui-view="">
+        <header>
+           查询
+        </header>
+        <ul>
+            <li ng-repeat="k in data">
+                <a ui-sref="title({ID:k.age})">{{k.name}}</a></li>
+        </ul>
+    </div>
+    <script src="js/common/angular.js"></script>
+    <script src="js/common/angular-ui-router.js"></script>
+    <script src="js/common/jquery.js"></script>
+    <script>
+        var app = angular.module("myapp", ["ui.router"])
+    </script>
+    <script src="js/route.js"></script>
+</body>
+
+</html>

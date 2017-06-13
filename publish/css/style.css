@@ -1,0 +1,19 @@
+header {
+    color: #fff;
+    font-size: 16px;
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color:#000;
+}
+
+ul {
+    margin: 100px auto;
+}
+
+li {
+    margin: 20px;
+    list-style: none;
+    float: left;
+}
